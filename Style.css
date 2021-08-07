@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@300;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background: #080b1a ;
+    background-repeat: no-repeat;
+    background-position: top center;  
+    background-size:cover;
+}
+.homeBG{
+    background-image: url('bgm.png');
+}
+.cBG{
+    background-image: url('bgc.png');
+}
+.frBG{
+    background-image: url('bgfr.png');
+}
+.fBG{
+    background-image: url('bgf.png');
+}
+.aBG{
+    background-image: url('bga.png');
+}
+.bBG{
+    background-image: url('bgb.png');
+}
+
+header{
+    margin: 40px 0 0 0;
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    padding: 0 30px;
+}
+
+.grid-mid{
+    display: flex;
+    justify-content: center;
+}
+
+.grid-r{
+    display: flex;
+    vertical-align: middle;
+}
+
+.brand{
+    margin-left: auto;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    align-self: center;
+}
+
+/* Home */
+.homeMain{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.homeTitleContainer{
+    margin: 80px 160px 0 160px;
+    display: grid;
+    grid-template-columns: 45% 10% 45%;
+    padding: 0 30px;
+}
+.homeTitle{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    position: relative;
+}
+.homeTitleT{
+    font-size: 120px;
+    color: #1B998B;
+}
+.homeTitleO{
+    top: 72px;
+    font-size: 50px;
+    color: #2D3047;
+}
+.homeTitleD{
+    font-size: 120px;
+    color: #E84855;
+}
+
+.categ{
+    color: #2D3047;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    margin: 30px 0;
+}
+
+.homeBtnContainer{
+    margin: 0px 150px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0 30px;
+}
+.catBtn{
+    border: none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    width: 170px;
+    height: 170px;
+    padding: 32px 32px;
+    font-size: 30px;
+    margin: 50px 0;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    border-radius: 25px;
+}
+.catBtnC{
+    background-color: #FF84D1;
+}
+.catBtnC:hover{
+    cursor: pointer;
+    background-color: #df58ad;
+}
+.catBtnFr{
+    background-color: #2D3047;
+}
+.catBtnFr:hover{
+    cursor: pointer;
+    background-color: #1b1d30;
+}
+.catBtnF{
+    background-color: #FF9B71;
+}
+.catBtnF:hover{
+    cursor: pointer;
+    background-color: #e78d67;
+}
+.catBtnA{
+    background-color: #E84855;
+}
+.catBtnA:hover{
+    cursor: pointer;
+    background-color: #cc3e4a;
+}
+.catBtnB{
+    background-color: #1B998B;
+}
+.catBtnB:hover{
+    cursor: pointer;
+    background-color: #157a6f;
+}
+
+/* Question pages */
+.questionPageContainer{
+    /* background-color: gray; */
+    margin: 30px 110px;
+    width: auto;
+    height: auto;
+    vertical-align: middle;
+    text-align: justify;
+    display: grid;
+    grid-template-rows: auto 430px auto;
+}
+
+.twoGrid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.count{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    margin-right: auto;
+}
+.backBtnContainer{
+    display: flex;
+    margin-left: auto;
+}
+.backBtn{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+    font-size: 26px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+.questionContainer{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    /* padding: 50px 0;
+    background-color: gray; */
+}
+.question{
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    font-size: 42px;
+}
+
+.nextBtnContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 0;
+}
+.nextBtn{
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    width: 1300px;
+    height: 50px;
+    font-size: 26px;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 400;
+    border-radius: 15px;
+    margin-left: auto;
+}
+
+/* About */
+.aboutDesc{
+    color: #2D3047;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 40px 110px;
+    border-radius: 10px;
+    min-height: 200px;
+    vertical-align: middle;
+    text-align: justify;
+    display: flex;
+}
+
+/* Hamburge */
+#menuToggle {
+    display: block;
+    position: relative;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: black;
+
+    transition: color 0.3s ease;
+}
+  
+#menuToggle a:hover {
+    color: #1B998B;
+}
+  
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+  
+    cursor: pointer;
+  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+  
+    -webkit-touch-callout: none;
+}
+  
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: black;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+  
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+  
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+  
+/* Transform all the slices of hamburger into a crossmark. */
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: black;
+}
+  
+/* hide the middle one. */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+  
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+  
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+  
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: "Inconsolata", monospace;
+}
+  
+#menuToggle input:checked ~ ul {
+    transform: none;
+}
+
+/* Hamburge White */
+#menuToggleW {
+    display: block;
+    position: relative;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggleW a {
+    text-decoration: none;
+    color: white;
+
+    transition: color 0.3s ease;
+}
+  
+#menuToggleW a:hover {
+    color: #FFFD82;
+}
+  
+#menuToggleW input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+  
+    cursor: pointer;
+  
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+  
+    -webkit-touch-callout: none;
+}
+  
+#menuToggleW span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+  
+    background: white;
+    border-radius: 3px;
+  
+    z-index: 1;
+  
+    transform-origin: 4px 0px;
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+  
+#menuToggleW span:first-child {
+    transform-origin: 0% 0%;
+}
+  
+#menuToggleW span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+  
+/* Transform all the slices of hamburger into a crossmark. */
+#menuToggleW input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: white;
+}
+  
+/* hide the middle one. */
+#menuToggleW input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+  
+#menuToggleW input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+  
+/*
+* Make this absolute positioned
+* at the top left of the screen
+*/
+#menuW {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+  
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+  
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+  
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+  
+#menuW li {
+    padding: 10px 0;
+    font-size: 22px;
+    font-family: "Inconsolata", monospace;
+}
+  
+#menuToggleW input:checked ~ ul {
+    transform: none;
+}
