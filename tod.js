@@ -1,4 +1,4 @@
-let btn = document.getElementById('nextQ');
+let btnC = document.getElementById('nextQC');
 let output = document.getElementById('output');
 let qCountOutput = document.getElementById('qCount');
 let qCount;
@@ -78,7 +78,6 @@ let adult =
         'What\'s the last thing you remember doing in the bedroom?',
         'Have you ever ate food while having sex?',
         'Did you ever dance sexually for someone?',
-        'Have you ever had someone talk dirty to you?',
         'Did you ever want to film a dirty movie?',
         'If you could have sex with anyone in this room, who would it be?',
         'What movie always turn you on?',
@@ -186,6 +185,13 @@ let fun =
         'What\'s the most useless piece of knowledge you know?',
         'Is it better to use shampoo as soap or soap as shampoo?',
         'Would you rather eat dog food or cat food?',
+        'Would you rather not shower for a month, or eat the same meal every day for a month?',
+        'Have you ever had a wardrobe malfunction?',
+        'Have you ever broken the law?',
+        'Would you trade your sibling in for a million dollars?',
+        'Would you trade in your dog for a million dollars?',
+        'Would you choose to save 100 people without anyone knowing about it or not save them but have everyone praise you for it?',
+        'Would you rather live with no internet or no A/C or heating?',
     ];
 
 let friend = 
@@ -269,13 +275,11 @@ let basic =
         'Have you ever bought something, worn it, and then returned it?',
         'Did you ever break something in the house as a kid?',
         'What rule did you always break when you were a child?',
-        'Have you ever broken the law?',
         'What\'s the one thing you really dislike about yourself',
         'If you had to pick one thing you love about yourself, what would it be?',
         'What\'s your favorite part of your family traditions?',
         'Did you ever turn a t-shirt inside out to wear it again?',
         'Did you ever watch a movie that was rated higher than your age?',
-        'Have you ever had a sip of alcohol?',
         'Did you ever lie to someone at church?',
         'Did you ever have an embarrassing thing happen to you and then lie about it?',
         'Would you go out with an older woman/man?',
@@ -296,7 +300,6 @@ let basic =
         'What is your guilty pleasure?',
         'What is your worst habit?',
         'Has anyone ever walked in on you when going #2 in the bathroom?',
-        'Have you ever had a wardrobe malfunction?',
         'Do you sing in the shower?',
         'Do you ever talk to yourself in the mirror?',
         'Do you sleep with a stuffed animal?',
@@ -309,11 +312,7 @@ let basic =
         'Have you ever farted and then blamed someone else?',
         'Have you ever tasted your sweat?',
         'Who is your favorite: Mom or Dad?',
-        'Would you trade your sibling in for a million dollars?',
-        'Would you trade in your dog for a million dollars?',
-        'Would you choose to save 100 people without anyone knowing about it or not save them but have everyone praise you for it?',
         'If you could only hear one song for the rest of your life, what would it be?',
-        'Would you rather live with no internet or no A/C or heating?',
         'If you could go back in time in erase one thing you said or did, what would it be?',
         'What\'s the longest time you\'ve stayed in the bathroom, and why did you stay for that long?',
         'Have you ever cried because you missed your parents so much?',
@@ -333,7 +332,6 @@ let basic =
         'What is something that no one else knows about you?',
         'Do you write in a diary?',
         'What\'s one food that you will never order at a restaurant?',
-        'Would you rather not shower for a month, or eat the same meal every day for a month?',
     ];
 
 function* shuffle(array) {
@@ -345,27 +343,29 @@ function* shuffle(array) {
     }
 
 }
-var ranNums = shuffle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,
+var ranNumsC = shuffle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,
     29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48]);
 
-btn.addEventListener('click', function(){
-    // var randomQuote = couple[Math.floor(Math.random() * couple.length)]
-    // output.innerHTML = randomQuote
-    qCount++
-
-    if (qCount == 5) {
-        btn.innerHTML = "YES"
+var ranNums = shuffle([0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,
+    29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,
+    61,62,63,64,65]);
+    
+btnC.addEventListener('click', function(){
+    qCount++;
+    
+    if (qCount == 20) {
+        btnC.innerHTML = "YES"
         output.innerHTML = couple[0];
         qCountOutput.innerHTML = "Question Number " + qCount;
     } 
     // else if (condition2) {
-
-    // } 
-    else {
-        output.innerHTML = couple[ranNums.next().value];
-        btn.innerHTML = "Next Question"
-        qCountOutput.innerHTML = "Question Number " + qCount;
-    }
-
-    
-})
+        
+        // } 
+        else {
+            output.innerHTML = couple[ranNumsC.next().value];
+            btnC.innerHTML = "Next Question"
+            qCountOutput.innerHTML = "Question Number " + qCount;
+        }
+        
+        
+    })
